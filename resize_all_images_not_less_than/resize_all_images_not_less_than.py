@@ -69,7 +69,7 @@ def scale_image_list(image_list, min_shorter, min_longer):
 
         if not image_wrapper.is_scalable():
             pdb.gimp_message("Image to small!")
-            return
+            continue
 
         image_wrapper.compute_new_size()
         image_wrapper.scale()
