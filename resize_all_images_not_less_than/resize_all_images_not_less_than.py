@@ -102,7 +102,7 @@ register (
     ],
     [],
     resize_all_images_not_less_than,                   # Matches to name of function being defined
-    menu = "<Image>/Automation/mwilczek.net"          # Menu Location
+    menu = "<Image>/Automation/mwilczek.net"           # Menu Location
 )
 
 main()
