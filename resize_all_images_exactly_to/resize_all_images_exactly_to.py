@@ -24,8 +24,9 @@ class ImageScaleWrapper:
         self.height = self._image.height
         self.width = self._image.width
 
-        self.ratio = float(self.width)/float(self.height)
-        self.desired_ratio = float(self.desired_height)/float(self.desired_width)
+        self.ratio = round(float(self.width)/float(self.height), 1)
+        self.desired_ratio = round(float(self.desired_width)/float(self.desired_height), 1)
+        print("DEBUG Ratios! ", "Current: ", self.ratio, "; Desired: ", self.desired_ratio)
 
     def is_ratio_ok(self):
         wrong_ratio = self.warn_if_wrong_ratio and self.ratio != self.desired_ratio
