@@ -34,7 +34,7 @@ register (
     "mwilczek.net",                                             # Author
     "mwilczek.net",                                             # Copyright Holder
     "2022-11-21",                                               # Date
-    "Open & Optionaly Not Less Than Given Values",              # Menu Entry
+    "Open & optionaly resize not less than given values",       # Menu Entry
     "",                                                         # Image Type - No Image Loaded
     [
         (PF_DIRNAME, "dir_to_open", "Originals (source) directory:", PICTURES_PATH),

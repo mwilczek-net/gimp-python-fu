@@ -89,12 +89,12 @@ def resize_all_images_not_less_than(min_shorter, min_longer):
 
 register (
     "resize_all_images_not_less_than",                 # Name registered in Procedure Browser
-    "Resize All Image Not Less Than Given Values",     # Widget title
-    "Resize All Image Not Less Than Given Values",     # Help
+    "Resize All Images Not Less Than Given Values",    # Widget title
+    "Resize All Images Not Less Than Given Values",    # Help
     "mwilczek.net",                                    # Author
     "mwilczek.net",                                    # Copyright Holder
     "2022-11-21",                                      # Date
-    "Resize Image Not Less Than",                      # Menu Entry
+    "Resize all images not less than",                 # Menu Entry
     "",                                                # Image Type - No Image Loaded
     [
         (PF_INT, "min_shorter", "Shorter edge minimum value (px)", DEFAULT_MIN_SHORTER),
