@@ -12,7 +12,7 @@ class ImageScaleWrapper:
     def __init__(self, image, min_shorter, min_longer):
         self._image = image
         self.min_shorter = min_shorter
-        self.min_shorter = min_longer
+        self.min_longer = min_longer
 
         self.height = None
         self.width = None
@@ -42,7 +42,7 @@ class ImageScaleWrapper:
         return self.longer > self.min_shorter and self.shorter > self.min_shorter
 
     def compute_new_size(self):
-        new_longer = self.min_shorter
+        new_longer = self.min_longer
         new_shorter = float(new_longer) / self.ratio
 
         if new_shorter < self.min_shorter:
