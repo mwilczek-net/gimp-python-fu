@@ -26,7 +26,7 @@ class ImageOpener:
         if not self.close_open_images(close_open_images):
             return
 
-        files_to_open = os.listdir(dir_to_open)
+        files_to_open = [f for f  in os.listdir(dir_to_open) if not f.startswith('.')]
         for file in files_to_open:
             file_path = os.path.join(dir_to_open, file)
             self._open_image(file_path)
@@ -69,4 +69,3 @@ register (
 )
 
 main()
-
